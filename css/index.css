@@ -1,0 +1,326 @@
+@font-face{
+  font-family:'ham';
+  src:url(../font/SF함박눈-TTF.ttf) format('truetype');
+  src:url(../font/SF함박눈-OTF.otf) format('opentype'),
+}
+
+*{margin:0; padding:0; box-sizing:border-box;}
+ol,ul{list-style:none;}
+a{text-decoration:none; color:inherit; user-select:none;}
+
+body{font-family: "나눔 고딕";}
+
+header{
+  width:100%;
+  min-width:1200px;
+  height:560px;
+  position:relative;
+  background-image: url(../img/ROCK.png);
+  background-position: center;
+  background-size: cover;
+}
+header > .overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0; top:0;
+  background-color:rgba(0,0,0,0.5);
+}
+header > .overlay > .wrap {
+  color:#fff;
+  width:1200px;
+  height:100%;
+  margin:auto;
+  position:relative;
+}
+header > .overlay > .wrap > .up{
+  line-height: 80px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 50px;
+}
+header .logo{
+  display: block;
+  margin-top:20px;
+}
+header > .overlay > .wrap > .up > .login{
+  float:right;  
+}
+header > .overlay > .wrap > .up > .login > li{
+  float:left;
+  margin-right:15px;  
+  display: block;
+  margin-top:-10px;
+}
+header > .overlay > .wrap > .up > .login > li:hover{
+  color:#999;
+}
+.main{position:relative;}
+
+.main .title{
+  position:absolute;
+  top:40px; left:20px;
+  font-family:'ham';  
+}
+.title h1{
+  font-size:72px;
+  text-indent: 20px;
+}
+.title p{
+  font-size:45px;
+  text-indent: 20px;
+  margin-top:5px;
+}
+.wrap > .sns{
+  position:absolute;
+  bottom:40px; right:20px;
+  width:380px;
+  display:flex;
+}
+.wrap > .sns > li{
+  margin-left:20px;
+}
+.wrap > .sns > li:nth-child(4){
+  margin-left:20px;
+  margin-top:3px;
+}
+nav{
+  width:1200px;
+  height:80px;
+  margin:auto;
+  text-align: center;
+}
+nav > .gnb{
+  margin:auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+nav > .gnb > li{
+  font-size:18px;
+  font-weight: bold;
+  line-height:80px;
+}
+.gnb > li > a{
+  padding:8px 15px;
+  border-radius: 20px;
+}
+.gnb li a:hover{
+  background-color: #000;
+  color:#fff;  
+}
+.notice{
+  margin:80px 0;
+}
+.notice > .wrap{
+  width:1200px;
+  height:290px;
+  margin:auto;  
+  display: flex;
+}
+.notice > .wrap > .box01{
+  width:580px;
+  height:290px;
+  font-size:18px;
+}
+.notice > .wrap > .box01 > h2{
+  line-height:40px;  
+  margin:0 0 10px 7px;
+}
+.notice > .wrap > .box01 > hr{
+  width:550px;
+  margin-bottom:10px;
+}
+.notice table{
+  border-collapse: collapse;
+}
+.notice tr{
+  height:40px;
+}
+.notice td:nth-child(2){
+  padding-left:18px;
+}
+.notice tr:hover{
+  cursor: pointer;
+  border-bottom:1px solid #666;
+}
+.notice .box02{
+  margin-left:50px;
+  cursor: pointer;
+}
+section{
+  margin:auto;
+  width:1200px; 
+  color:#fff;  
+}
+section .lineup{
+  margin-bottom:80px;
+}
+section .fri,
+section .sat,
+section .sun{  
+  position:relative;
+}
+section .artist01,
+section .artist02,  
+section .artist03{
+  width:880px;
+  height:320px;
+  position:relative;
+  margin:auto;
+  overflow:hidden;
+}
+section .imgs01,
+section .imgs02,
+section .imgs03{  
+  width:300%;
+  height:320px;
+  position:absolute;
+  top:0; left:0;
+  background-color:#000;   
+}
+
+section button[type=button]{
+  background-color: transparent;
+  position:absolute;  
+  opacity: 0.7;
+  border: none;
+}
+section .prev01,
+section .prev02,
+section .prev03{
+  left:25px; top:150px; 
+}
+section .next01,
+section .next02,
+section .next03{ 
+  right:25px; top:150px;
+}
+section .prev01:hover,
+section .next01:hover,
+section .prev02:hover,
+section .next02:hover,
+section .prev03:hover,
+section .next03:hover{
+  opacity: 1;
+}
+section li{
+  margin-bottom:40px;
+}
+section div{
+  display:inline-block;
+}
+section .date{
+  width:320px;
+  height:320px;
+  background-color:#0162b1;
+  color:#fff;
+  position:absolute;
+  z-index: 1;
+  text-align: center;
+}
+section h3{
+  font-size:150px;
+  margin-top:25px;
+}
+section .date p{
+  font-size:30px;
+  line-height: 0px;
+}
+section .dot li{
+  width:35px;
+  height:35px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  position:absolute;
+}
+section .dot li:first-child{
+  top:-15px;
+  right:303px;
+}
+section .dot li:last-child{
+  bottom:-50px;
+  right:303px;
+}
+
+article .instagram{
+  width:1200px;
+  margin:auto;
+  text-align: center;
+}
+.instagram .box {
+  width:378px;
+  height:378px;
+  position:relative;
+  display: inline-block;
+  overflow:hidden;
+  cursor: pointer;
+}
+.instagram .box:nth-child(1),
+.instagram .box:nth-child(2),
+.instagram .box:nth-child(3){
+  margin-bottom:20px;
+}
+.instagram .box:nth-child(1),
+.instagram .box:nth-child(2),
+.instagram .box:nth-child(4),
+.instagram .box:nth-child(5){
+  margin-right:27px;
+}
+.instagram .box .pic{
+  width:378px;
+  height:378px;
+  transition:all 0.5s cubic-bezier(.21,.77,.39,.91);
+}
+.instagram .box:hover .pic{  
+  transform:scale(1.2);
+}
+.instagram .box .icon{
+  position:absolute;
+  top:20px; left:20px;
+  width:56px;
+  height:56px;
+}
+.instagram .hashtag{
+  line-height: 80px;
+  font-size:20px;
+  margin-top:25px;
+  margin-bottom:80px;
+}
+
+.songdo{
+  width:1200px;
+  height: 500px;
+  border:1.5px dotted #333;  
+  margin:auto;
+  margin-bottom:200px;
+}
+.songdo .wrap{
+  position:relative;
+}
+.songdo iframe{
+  position:absolute;
+  top:50px; left:50px;
+}
+.songdo .txt{  
+  position:absolute;
+  top:50px; right:50px;
+  width:450px;
+  height:400px;
+  color:#333;
+}
+.songdo hr{
+  color:#333;
+  margin:20px 0;
+} 
+.songdo p{
+  padding:15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 35px;
+}
+.songdo span{
+  color:#999;
+}

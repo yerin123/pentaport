@@ -1,0 +1,33 @@
+.sponsors{
+  width:860px;
+  height:48px;  
+  margin:auto;  
+}
+footer{
+  width:auto;
+  height:242px;
+  color: #333;
+  margin-top: 40px;
+}
+footer hr{
+  color: #333;
+}
+footer .txt{
+  width:1200px;
+  margin:auto;
+}
+footer .txt p{
+  padding:40px 0 0 16px;
+  line-height: 30px;
+}
+footer .txt ul{
+  padding:80px 0 0 16px;
+  text-align: 40px;
+}
+footer .txt ul li{
+  float:left;
+}
+footer .txt ul li:nth-child(2){padding-left:40px}
+footer .other{
+  padding-left:760px;
+}
